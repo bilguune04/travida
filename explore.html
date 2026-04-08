@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+  <div class="logo">Travida</div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">Premium</a>
+    <a href="#">Blogs</a>
+    <a href="explore.html" class="active">Explore</a>
+  </nav>
+
+  <button class="login-btn">Login</button>
+</header>
+
+<div class="explore-wrapper">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <h3>When are you traveling?</h3>
+    <button class="date-btn">February 05 - March 4</button>
+
+    <h4>Tour Type</h4>
+    <ul>
+      <li><input type="checkbox"> Nature tour</li>
+      <li><input type="checkbox"> Adventure tour</li>
+      <li><input type="checkbox"> City tour</li>
+      <li><input type="checkbox"> Cruise tour</li>
+      <li><input type="checkbox"> Cultural tour</li>
+    </ul>
+
+    <h4>Filter Price</h4>
+    <h4>Duration</h4>
+    <h4>Language</h4>
+    <h4>Rating</h4>
+    <h4>Specials</h4>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="main">
+
+    <h2>Explore all things to do in Phuket</h2>
+
+    <!-- CARD -->
+    <div class="trip-card">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+
+      <div class="trip-details">
+        <h3>Phi Phi Islands Adventure Day Trip</h3>
+        <p>Seaview Lunch by V. Marine Tour</p>
+        <p class="desc">This Phi Phi archipelago is a must-visit while in Phuket</p>
+
+        <div class="tags">
+          <span>Free Cancellation</span>
+          <span>Best Price Guarantee</span>
+        </div>
+      </div>
+
+      <div class="trip-side">
+        <div class="duration">7-9 hours</div>
+        <div class="price">From $114</div>
+        <button onclick="goDetail()">View Details</button>
+      </div>
+    </div>
+
+    <!-- COPY MANY -->
+    <div class="trip-card">
+      <img src="https://images.unsplash.com/photo-1528127269322-539801943592">
+
+      <div class="trip-details">
+        <h3>James Bond Island Tour</h3>
+        <p>Luxury Boat Experience</p>
+        <p class="desc">Explore stunning limestone cliffs</p>
+        <div class="tags">
+          <span>Free Cancellation</span>
+        </div>
+      </div>
+
+      <div class="trip-side">
+        <div class="duration">7 hours</div>
+        <div class="price">From $120</div>
+        <button onclick="goDetail()">View Details</button>
+      </div>
+    </div>
+
+    <div class="trip-card">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+
+      <div class="trip-details">
+        <h3>Phi Phi Islands Adventure Day Trip</h3>
+        <p>Seaview Lunch by V. Marine Tour</p>
+        <p class="desc">This Phi Phi archipelago is a must-visit while in Phuket</p>
+
+        <div class="tags">
+          <span>Free Cancellation</span>
+          <span>Best Price Guarantee</span>
+        </div>
+      </div>
+
+      <div class="trip-side">
+        <div class="duration">7-9 hours</div>
+        <div class="price">From $114</div>
+        <button onclick="goDetail()">View Details</button>
+      </div>
+    </div>
+
+    <!-- PAGINATION -->
+    <div class="pagination">
+      <span class="active">1</span>
+      <span>2</span>
+      <span>3</span>
+      <span>...</span>
+      <span>10</span>
+    </div>
+
+  </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
