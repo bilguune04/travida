@@ -2,84 +2,207 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Travel UI</title>
-
-  <!-- CSS -->
+  <title>Travida</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<div class="hero">
-
-  <div class="left">
-    
-    <div class="nav">
-      <div class="logo">🌴</div>
-
-      <div class="nav-right">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Premium</a>
-        <a href="#">Blogs</a>
-       <a href="explore.html" class="explore">Explore</a>
-      </div>
+  <!-- HEADER -->
+   <header class="header">
+    <div class="logo">
+      <img src="https://via.placeholder.com/35" alt="Travida Logo">
+      <span>Travida</span>
     </div>
 
-    <div class="tag">MOUNTAINS | PLAINS | BEACHES</div>
+    <nav>
+      <a href="explore.html">Зорчих газрууд</a>
+      <a href="#">Үйл ажиллагаа</a>
+      <a href="#">USD</a>
+      <a href="#">Бүртгүүлэх</a>
+      <button class="login-btn">Нэвтрэх</button>
+    </nav>
+  </header>
 
-    <h1>Spend your vacation with our activities</h1>
-
-    <div class="cards">
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
-        <h4>Trip to Scotland</h4>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Таны аз жаргалын ертөнц</h1>
+      <p>Орон нутгийн амралтаас эхлээд холын аялал хүртэл, хаана ч, хэзээ ч таныг баярлуулах зүйлс ол.</p>
+      <div class="search-box">
+        <div class="input-group">
+          <span>📍</span>
+          <input type="text" placeholder="Хаана">
+        </div>
+        <div class="input-group">
+          <span>📅</span>
+          <input type="date">
+        </div>
+        <div class="input-group">
+        <span>🧭</span>
+        <input type="text" placeholder="Аяллын төрөл" id="tripTypeInput" autocomplete="off">
+        <div class="dropdown" id="tripDropdown">
+          <div class="dropdown-item">cruise</div>
+          <div class="dropdown-item">Аялал 2</div>
+        </div>
       </div>
-
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1549887534-3ec93abae7c1">
-        <h4>Trip to Egypt</h4>
-      </div>
-
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
-        <h4>Trip to Greece</h4>
+        <button>Search</button>
       </div>
     </div>
+  </section>
 
-    <div class="search-box">
-      <div>
-        <strong>Accommodation</strong><br>
-        6730 Luna Land North
-      </div>
-
-      <div>
-        <strong>Check-in</strong><br>
-        <input type="date">
-      </div>
-
-      <div>
-        <strong>Check-out</strong><br>
-        <input type="date">
-      </div>
-
-      <div>
-        <strong>Guests</strong><br>
-        <input type="number" value="4">
-      </div>
-
-      <button class="search-btn" onclick="search()">Search</button>
+  <!-- TRENDING DESTINATIONS -->
+  <section class="trending-section">
+    <div class="trending-header">
+      <h2>Trending destinations</h2>
+      <a href="#">See all</a>
     </div>
 
+    <div class="trending-carousel">
+      <div class="destination">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Paris">
+        <div class="destination-name">Paris</div>
+        <div class="destination-tours">100+ Tours</div>
+      </div>
+      <div class="destination">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Singapore">
+        <div class="destination-name">Singapore</div>
+        <div class="destination-tours">300+ Tours</div>
+      </div>
+      <div class="destination">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Roma">
+        <div class="destination-name">Roma</div>
+        <div class="destination-tours">400+ Tours</div>
+      </div>
+      <div class="destination">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Bangkok">
+        <div class="destination-name">Bangkok</div>
+        <div class="destination-tours">100+ Tours</div>
+      </div>
+      <div class="destination">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Bali">
+        <div class="destination-name">Bali</div>
+        <div class="destination-tours">600+ Tours</div>
+      </div>
+      <div class="destination">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Phuket">
+        <div class="destination-name">Phuket</div>
+        <div class="destination-tours">200+ Tours</div>
+      </div>
+      <div class="destination">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Tokyo">
+        <div class="destination-name">Tokyo</div>
+        <div class="destination-tours">700+ Tours</div>
+      </div>
+      <div class="destination">
+        <img src="https://source.unsplash.com/150x150/?cappadocia,balloon" alt="Cappadocia">
+        <div class="destination-name">Cappadocia</div>
+        <div class="destination-tours">900+ Tours</div>
+      </div>
+    </div>
+    <section class="popular">
+  <div class="popular-header">
+    <h2>Find Popular Tours</h2>
+    <a href="#">See all</a>
   </div>
 
-  <div class="right"></div>
+  <div class="card-grid">
 
-</div>
+    <!-- CARD -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+      <div class="card-body">
+        <p class="location">Paris, France</p>
+        <h3>Centipede Tour - Guided Arizona Desert Tour by ATV</h3>
+        <p class="rating">⭐ 4.8 (243)</p>
+        <div class="card-footer">
+          <span>4 days</span>
+          <span>From $189.25</span>
+        </div>
+      </div>
+    </div>
 
-<!-- JS -->
-<script src="script.js"></script>
+    <!-- COPY THIS CARD -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+      <div class="card-body">
+        <p class="location">New York, USA</p>
+        <h3>Molokini and Turtle Town Snorkeling Adventure</h3>
+        <p class="rating">⭐ 4.8 (243)</p>
+        <div class="card-footer">
+          <span>4 days</span>
+          <span>From $225</span>
+        </div>
+      </div>
+    </div>
 
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5ce">
+      <div class="card-body">
+        <p class="location">London, UK</p>
+        <h3>Westminster Walking Tour & Abbey Entry</h3>
+        <p class="rating">⭐ 4.8 (243)</p>
+        <div class="card-footer">
+          <span>4 days</span>
+          <span>From $943</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb">
+      <div class="card-body">
+        <p class="location">New York, USA</p>
+        <h3>All Inclusive Ultimate Circle Island Tour</h3>
+        <p class="rating">⭐ 4.8 (243)</p>
+        <div class="card-footer">
+          <span>4 days</span>
+          <span>From $771</span>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5ce">
+      <div class="card-body">
+        <p class="location">London, UK</p>
+        <h3>Westminster Walking Tour & Abbey Entry</h3>
+        <p class="rating">⭐ 4.8 (243)</p>
+        <div class="card-footer">
+          <span>4 days</span>
+          <span>From $943</span>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5ce">
+      <div class="card-body">
+        <p class="location">London, UK</p>
+        <h3>Westminster Walking Tour & Abbey Entry</h3>
+        <p class="rating">⭐ 4.8 (243)</p>
+        <div class="card-footer">
+          <span>4 days</span>
+          <span>From $943</span>
+        </div>
+      </div>
+    </div>
+      <div class="card">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb">
+      <div class="card-body">
+        <p class="location">New York, USA</p>
+        <h3>All Inclusive Ultimate Circle Island Tour</h3>
+        <p class="rating">⭐ 4.8 (243)</p>
+        <div class="card-footer">
+          <span>4 days</span>
+          <span>From $771</span>
+        </div>
+      </div>
+    </div>
+    
+    
+
+  </div>
+</section>
+  </section>
+    <script src="script.js"></script>
 </body>
 </html>
